@@ -8,7 +8,7 @@ let age: number;
 
 age = 12;
 
-let userName: string;
+let userName: string | string[];
 
 userName = "jeong";
 
@@ -44,5 +44,12 @@ let people: {
 // Type inference
 
 let course = "React - The Complete Guide";
+// let course: string = "React - The Complete Guide"
 
-course = 12345;
+// course = 12345;
+
+// Union Type
+
+let reactCourse: string | number | boolean = "React - The Complete Guide";
+
+reactCourse = 12345;
