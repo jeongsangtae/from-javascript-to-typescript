@@ -49,3 +49,13 @@ let course = "React - The Complete Guide";
 let reactCourse: string | number | boolean = "React - The Complete Guide";
 
 reactCourse = 12345;
+
+// Function & types
+
+const add = (a: number, b: number): number => {
+  return a + b;
+};
+
+const printOutput = (value: any) => {
+  console.log(value);
+};
