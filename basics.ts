@@ -59,3 +59,18 @@ const add = (a: number, b: number): number => {
 const printOutput = (value: any) => {
   console.log(value);
 };
+
+// Generics
+
+const insertAtBeginning = <T>(array: T[], value: T) => {
+  const newArray = [value, ...array];
+  return newArray;
+};
+
+const demoArray = [1, 2, 3];
+
+const updatedArray = insertAtBeginning(demoArray, -1);
+
+const stringArray = insertAtBeginning(["a", "b", "c"], "d");
+
+// updatedArray[0].split("");
